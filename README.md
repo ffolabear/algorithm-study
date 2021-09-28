@@ -75,7 +75,7 @@
 
 ## 🗓 진행상황
   
-  ### Programmers lv02
+  #### Programmers lv02
   - 문자열 압축
   - 오픈채팅방
 
