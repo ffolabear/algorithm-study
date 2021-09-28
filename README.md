@@ -70,6 +70,7 @@
        프로그래머스 lv2 문자열 압축 - 푸는중
        입력받은 데이터 처리후 가공하는 로직 구현중
        ```
+     * [캠퍼스 핵데이 Java 코딩 컨벤션](https://naver.github.io/hackday-conventions-java/) 을 참고했습니다.
 
 </br> 
 
