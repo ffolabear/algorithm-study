@@ -1,4 +1,4 @@
-package level02;
+package programmers.level02.stringcompression;
 
 public class StringComp_ffbear {
 
