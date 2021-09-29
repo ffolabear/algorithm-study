@@ -1,44 +1,64 @@
 package programmers.level02.stringcompression;
 
+
 public class StringComp_ffbear {
 
     public int solution(String s) {
 
-        int answer = 0;
-        String temp = "";
+        int answer = Integer.MAX_VALUE;
 
-        if (s.length() == 1) {
-            answer = 1;
+        int center = s.length() / 2;
 
-        } else {
+        if (s.length() == 1){
+            return 1;
+        }
 
-            //문자열의 절반보다 큰 단위는 존재할수없음
-            int middle = s.length() / 2;
 
-            //문자열 단위
-            String unit = "";
+        for (int i = 1; i <= center; i++) {
 
-            //단위를 제거하고 남은 문자
-            String left = "";
+            //압축한 문자열들을 저장할 변수
+            StringBuilder covt = new StringBuilder();
 
-            //남은문자에서 단위와 같은지 검증
-            String valid = "";
+            //갈이별로 자른 문자열 비교 변수
+            String compare = "";
 
-            //같은 문자 반복 횟수 카운트
-            int cnt = 0;
+            int cnt = 1;
 
-            for (int i = middle; i >= 0; i--) {
+            for (int j = 0; j < s.length() / i; j++) {
 
-                unit = s.substring(0, i);
-                left = s.substring(i);
-                valid = left.substring(0, unit.length());
-                int count = 1;
+                String unit = s.substring((j * i), ((j * i) + i));
 
-//                System.out.println(unit + " / " + left + " / " + valid);
+                if (compare.equals(unit)) {
+                    cnt++;
+                    continue;
+                }
 
+                //카운트가 1이상이면 압축하고 아니라면 그냥 붙여줌
+                if (cnt > 1) {
+                    covt.append(cnt).append(compare);
+                    cnt = 1;
+                } else {
+                    covt.append(compare);
+                }
+
+                compare = unit;
             }
 
+            if (cnt > 1) {
+                covt.append(cnt).append(compare);
+            } else {
+                covt.append(compare);
+            }
+
+            if (s.length() % i != 0) {
+                covt.append(s.substring(s.length() - s.length() % i));
+            }
+
+            answer = Math.min(answer, covt.length());
+
+
         }
+
 
         return answer;
     }
