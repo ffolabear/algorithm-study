@@ -1,6 +1,5 @@
 package programmers.level02.KakaoFriendsColoringBook;
 
-import java.util.*;
 import java.util.Arrays;
 
 public class KakaoFriendsColoringBook_carnival77 {
