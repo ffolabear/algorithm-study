@@ -1,5 +1,8 @@
+package programmers.level02.OpenChatRoom;
+
 import java.util.HashMap;
-class Solution {
+
+class OpenChatRoom_gytj2013 {
     public static String[] solution(String[] record) {
         String[] answer = {};
         HashMap<String, String> usermap = new HashMap<String, String>();
