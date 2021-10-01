@@ -1,4 +1,6 @@
-class Solution {
+package programmers.level02.stringcompression;
+
+class StringComp_gytj2013 {
     public static int solution(String s) {
         int answer = s.length();
         for(int i=1; i<=s.length()/2;i++) {
