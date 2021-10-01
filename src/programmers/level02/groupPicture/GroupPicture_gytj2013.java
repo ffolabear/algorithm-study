@@ -37,8 +37,8 @@ class GroupPicture_gytj2013 {
 					return false;
 				}
 			}
-			else if(data[i].charAt(3) == '>') if(dif <= num) return false;
-			else if(dif >= num) return false;
+			else if(data[i].charAt(3) == '>') {if(dif <= num) return false;}
+			else if(dif >= num) {return false;}
 		}
 		return true;
 	}
