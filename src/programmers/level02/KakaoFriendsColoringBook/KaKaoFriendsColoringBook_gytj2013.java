@@ -1,3 +1,5 @@
+package programmers.level02.KakaoFriendsColoringBook;
+
 import java.util.*;
 
 class Node {
@@ -9,7 +11,7 @@ class Node {
 	}
 }
 
-class Solution {
+class KakaoFriendsColoringBook_gytj2013{
 	int[] dx = {-1, 0, 1, 0}; //상우하좌 
 	int[] dy = {0, 1, 0, -1};
 	boolean[][] visited; //방문여부 
