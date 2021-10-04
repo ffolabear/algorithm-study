@@ -28,6 +28,8 @@ public class StringComp_ffbear {
 
                 String unit = s.substring((j * i), ((j * i) + i));
 
+                System.out.println(unit);
+
                 if (compare.equals(unit)) {
                     cnt++;
                     continue;
