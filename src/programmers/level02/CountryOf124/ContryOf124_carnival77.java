@@ -1,8 +1,6 @@
-package programmers.level02.onetwofourWorld;
+package programmers.level02.CountryOf124;
 
-import programmers.level02.NormalSquare.NormalSquare_carnival77;
-
-public class onetwofourWorld_carnival77 {
+public class ContryOf124_carnival77 {
     public String solution(int n) {
 
        String[] numbers={"4","1","2"};
@@ -23,7 +21,7 @@ public class onetwofourWorld_carnival77 {
 
 
         int n = 4;
-        onetwofourWorld_carnival77 sol = new onetwofourWorld_carnival77();
+        ContryOf124_carnival77 sol = new ContryOf124_carnival77();
         sol.solution(n);
 
     }
