@@ -6,8 +6,8 @@
   - [홍지혜](https://github.com/jola7373)
   - [김태현](https://github.com/ffolabear)
   - [김효서](https://github.com/gytj2013)
-  - [임한응](https://github.com/chelllagom)
-  - [신동민](https://github.com/carnival77)
+  - ~~[임한응](https://github.com/chelllagom)~~
+  - ~~[신동민](https://github.com/carnival77)~~
 
 
 </br> 
