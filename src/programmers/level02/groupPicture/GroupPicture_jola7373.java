@@ -1,7 +1,8 @@
 package programmers.level02.groupPicture;
+import java.util.HashMap;
 
 public class GroupPicture_jola7373 {
-    import java.util.HashMap;
+
     class Solution {
         HashMap<Character, Integer> map;
         int n;

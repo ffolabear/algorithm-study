@@ -1,7 +1,8 @@
 package programmers.level02.KakaoFriendsColoringBook;
+import java.util.*;
 
 public class KakaoFriendsColoringBook_jola7373 {
-    import java.util.*;
+
     class Solution {
         static int dr[] = {-1, 1, 0, 0};
         static int dc[] = {0, 0, -1, 1};
