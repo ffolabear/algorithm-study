@@ -20,6 +20,7 @@ public class TargetNum_ffbear {
             if (sum == target) {
                 answer++;
             }
+
             return;
 
         }
