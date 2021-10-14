@@ -2,18 +2,17 @@ package programmers.level02.kakaoFriendsColoringBook;
 import java.util.*;
 
 public class KakaoFriendsColoringBook_jola7373 {
-
-    class Solution {
-        static int dr[] = {-1, 1, 0, 0};
-        static int dc[] = {0, 0, -1, 1};
-        static class Node{
-            int r, c, num;
-            public Node(int r, int c, int num){
-                this.r = r;
-                this.c = c;
-                this.num = num;
-            }
+    static int dr[] = {-1, 1, 0, 0};
+    static int dc[] = {0, 0, -1, 1};
+    static class Node{
+        int r, c, num;
+        public Node(int r, int c, int num){
+            this.r = r;
+            this.c = c;
+            this.num = num;
         }
+    }
+    class Solution {
         public int[] solution(int m, int n, int[][] picture) {
             int[] answer = new int[2];
             boolean visit[][] = new boolean [m][n];
