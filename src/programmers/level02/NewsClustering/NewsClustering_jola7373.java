@@ -1,4 +1,4 @@
-package programmers.level02.NewsClustering;
+package programmers.level02.newsClustering;
 import java.util.ArrayList;
 import java.util.HashSet;
 
