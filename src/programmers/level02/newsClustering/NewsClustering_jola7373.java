@@ -1,8 +1,8 @@
-package programmers.level02.newsClustering;
+package programmers.level02.NewsClustering;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class newsClustering_jola7373 {
+public class NewsClustering_jola7373 {
 
     class Solution {
         public int solution(String str1, String str2) {
