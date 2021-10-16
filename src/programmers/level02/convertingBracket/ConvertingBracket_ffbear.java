@@ -1,105 +1,73 @@
 package programmers.level02.convertingBracket;
 
+import java.util.Stack;
+
 public class ConvertingBracket_ffbear {
+
+    static int index;
 
     public String solution(String p) {
         String answer = "";
 
-        String[] covt = p.split("");
-
-        int cnt = 0;
-
-        if (p.equals("")) {
-            answer = "";
+        if (p.length() == 0) {
+            return p;
         }
 
-        int idx = split(p);
-        String u = p.substring(0, idx);
-        String v = p.substring(idx);
+        boolean isValid = isCorrect(p);
 
-        if (isValid(u)) {
-            answer += u;
+        String u = p.substring(0, index);
+        String v = p.substring(index, p.length());
+
+        if (isValid) {
+            answer = u + solution(v);
         } else {
-            answer += "(";
-            if (!v.equals("")) {
-                solution(v);
-                v = "";
+            answer = "(" + solution(v) + ")";
+            for (int i = 1; i < u.length() - 1; i++) {
+                if (u.charAt(i) == '(') {
+                    answer += ")";
+                } else {
+                    answer += "(";
+                }
             }
         }
 
 
-        answer += ")";
-        answer += convert(u);
-
-        if (!v.equals("")) {
-            solution(v);
-        }
 
         return answer;
     }
 
+    static boolean isCorrect(String p) {
 
-    static int split(String p) {
+        boolean isValid = true;
 
-        String[] covt = p.split("");
+        int left = 0;
+        int right = 0;
 
-        int cnt = 0;
-        int idx = 0;
+        Stack<Character> stack = new Stack<>();
 
-
-        for (int i = 0; i < covt.length; i++) {
-            if (covt[i].equals("(")) {
-                cnt++;
+        for (int i = 0; i < p.length(); i++) {
+            if (p.charAt(i) == '(') {
+                left++;
+                stack.push('(');
             } else {
-                cnt--;
+                right++;
+                //스택이 비어있다 = 짝이 맞지 않다.
+                if (stack.isEmpty()) {
+                    isValid = false;
+                } else {
+                    stack.pop();
+                }
             }
-
-            //균형잡힌 문자열
-            if (cnt == 0) {
-                idx = i + 1;
-                break;
+            //최초로 같을떄가 가장 짧은 문자열 u
+            if (left == right) {
+                index = i + 1;
+                return isValid;
             }
-
 
         }
-        return idx;
-    }
 
-    public boolean isValid(String p) {
-
-        String[] covt = p.split("");
-
-        int cnt = 0;
-
-        for (int i = 0; i < covt.length; i++) {
-            if (covt[i].equals("(")) {
-                cnt++;
-            } else {
-                cnt--;
-            }
-
-            if (cnt < 0) {
-                return false;
-            }
-        }
+        //사실 이부분 까지 도달하는 경우는 없음
         return true;
-    }
-
-    static String convert(String p) {
-
-        String[] covt = p.split("");
-        StringBuilder sb = new StringBuilder();
-
-        for (int i = 0; i < covt.length; i++) {
-            if (covt[i] == "(") {
-                sb.append(")");
-            } else {
-                sb.append("(");
-            }
-
-
-        }
-        return sb.toString();
     }
 
     public static void main(String[] args) {
