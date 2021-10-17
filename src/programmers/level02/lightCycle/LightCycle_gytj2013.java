@@ -12,9 +12,7 @@ class LightCycle_gytj2013{
     	ArrayList<Integer> list = new ArrayList<>();
         boolean[][][] visited = new boolean[R][C][4]; //방문여부 
     	
-    	for(int i=0; i<R;i++) {
-    		arr[i] = grid[i].split("");
-    	}
+    	for(int i=0; i<R;i++) {arr[i] = grid[i].split("");}
     	
     	for(int i=0; i<R;i++) {
     		for(int j=i%2; j<C;j+=2) {
@@ -49,7 +47,7 @@ class LightCycle_gytj2013{
 					if(visited[i][j][3]) break;
 					visited[i][j][3] = true;
 					tmp++;
-					dir = "left";
+					dir="left";
 					if(j>0) {j--;}
 					else {j = arr[0].length-1;}
 					continue;
@@ -58,7 +56,7 @@ class LightCycle_gytj2013{
 					if(visited[i][j][1]) break;
 					visited[i][j][1] = true;
 					tmp++;
-					dir = "right";
+					dir="right";
 					if(j<arr[i].length-1) {j++;}
 					else {j=0;}
 					continue;
@@ -69,7 +67,7 @@ class LightCycle_gytj2013{
 					if(visited[i][j][0]) break;
 					visited[i][j][0] = true;
 					tmp++;
-					dir = "up";
+					dir="up";
 					if(i>0) {i--;}
 					else {i = arr.length-1;}
 					continue;
@@ -78,7 +76,7 @@ class LightCycle_gytj2013{
 					if(visited[i][j][2]) break;
 					visited[i][j][2] = true;
 					tmp++;
-					dir = "down";
+					dir="down";
 					if(i<arr.length-1) {i++;}
 					else {i=0;}
 					continue;
@@ -97,7 +95,7 @@ class LightCycle_gytj2013{
 		    		if(visited[i][j][3]) break;
 					visited[i][j][3] = true;
 					tmp++;
-					dir = "left";
+					dir="left";
 					if(j>0) {j--;}
 					else {j= arr[i].length-1;}
 					continue;
@@ -114,7 +112,7 @@ class LightCycle_gytj2013{
 					if(visited[i][j][1]) break;
 					visited[i][j][1] = true;
 					tmp++;
-					dir = "right";
+					dir="right";
 					if(j<arr[i].length-1) {j++;}
 					else {j=0;}
 					continue;
@@ -142,7 +140,7 @@ class LightCycle_gytj2013{
 					if(visited[i][j][0]) break;
 					visited[i][j][0] = true;
 					tmp++;
-					dir = "up";
+					dir="up";
 					if(i>0) {i--;}
 					else {i=arr.length-1;}
 					continue;
