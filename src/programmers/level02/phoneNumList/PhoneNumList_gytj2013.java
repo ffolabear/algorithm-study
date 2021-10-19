@@ -6,7 +6,6 @@ import java.util.Comparator;
 
 class PhoneNumList_gytj2013 {
     public static boolean solution(String[] phone_book) {
-    	public boolean solution(String[] phone_book) {
     	Arrays.sort(phone_book, new Comparator<String>() {
     	    @Override
     	    public int compare(String s1, String s2) {
