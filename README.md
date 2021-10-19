@@ -6,10 +6,10 @@
   - [홍지혜](https://github.com/jola7373)
   - [김태현](https://github.com/ffolabear)
   - [김효서](https://github.com/gytj2013)
+  - [신동민](https://github.com/carnival77)
   - ~~임한응~~
     <!--   https://github.com/chelllagom   -->
-  - ~~신동민~~
-    <!--  https://github.com/carnival77  -->
+
 
 
 </br> 
@@ -116,6 +116,10 @@
   - 수식 최대화
   - 튜플
   - 빛의 경로 사이클
+  
+  ##### 4주차
+  - 전화번호 목록
+  - 프린터
 
 
 
