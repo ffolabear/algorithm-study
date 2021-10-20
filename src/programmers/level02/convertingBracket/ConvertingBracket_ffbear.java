@@ -20,6 +20,7 @@ public class ConvertingBracket_ffbear {
 
         if (isValid) {
             answer = u + solution(v);
+
         } else {
             answer = "(" + solution(v) + ")";
             for (int i = 1; i < u.length() - 1; i++) {
@@ -49,6 +50,7 @@ public class ConvertingBracket_ffbear {
             if (p.charAt(i) == '(') {
                 left++;
                 stack.push('(');
+
             } else {
                 right++;
                 //스택이 비어있다 = 짝이 맞지 않다.

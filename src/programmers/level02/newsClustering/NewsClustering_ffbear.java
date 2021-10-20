@@ -3,6 +3,7 @@ package programmers.level02.newsClustering;
 import java.util.ArrayList;
 
 public class NewsClustering_ffbear {
+
     public int solution(String str1, String str2) {
 
         str1 = str1.toLowerCase();
@@ -14,6 +15,7 @@ public class NewsClustering_ffbear {
         ArrayList<String> union = new ArrayList<>();
 
         for (int i = 0; i < str1.length() - 1; i++) {
+
             char a = str1.charAt(i);
             char b = str1.charAt(i + 1);
 
@@ -33,6 +35,8 @@ public class NewsClustering_ffbear {
 
         }
 
+        System.out.println(str1Arr);
+        System.out.println(str2Arr);
 
         int intersection = 0;
 
@@ -49,6 +53,7 @@ public class NewsClustering_ffbear {
         if (union.size() == 0) {
             answer = 65536;
         } else {
+
             double j = (double) intersection / (double) union.size() * 65536;
             answer = (int) Math.floor(j);
 
@@ -67,7 +72,7 @@ public class NewsClustering_ffbear {
         String str22 = "shake hands";
 
         NewsClustering_ffbear sol = new NewsClustering_ffbear();
-        sol.solution(str1, str2);
+//        sol.solution(str1, str2);
         sol.solution(str11, str22);
 
     }
