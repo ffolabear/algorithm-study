@@ -109,10 +109,10 @@ public class DistanceCheck_ffbear {
     public static void main(String[] args) {
 
         String[][] places = {{"POOOP", "OXXOX", "OPXPX", "OOXOX", "POXXP"},
-                            {"POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"},
-                            {"PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"},
-                            {"OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"},
-                            {"PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"}};
+                             {"POOPX", "OXPXP", "PXXXO", "OXXXO", "OOOPP"},
+                             {"PXOPX", "OXOXP", "OXPOX", "OXXOP", "PXPOX"},
+                             {"OOOXX", "XOOOX", "OOOXX", "OXOOX", "OOOOO"},
+                             {"PXPXP", "XPXPX", "PXPXP", "XPXPX", "PXPXP"}};
 
         DistanceCheck_ffbear sol = new DistanceCheck_ffbear();
         sol.solution(places);
