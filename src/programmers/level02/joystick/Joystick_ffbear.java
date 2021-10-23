@@ -5,35 +5,25 @@ public class Joystick_ffbear {
     public int solution(String name) {
 
         int answer = 0;
-        int forward = 0;
+        int length = name.length();
+        int move = length - 1;
 
-        for (int i = 0; i < name.length(); i++) {
+        for (int i = 0; i < length; i++) {
 
-            int a = 0;
-
-            if (name.charAt(i) == 'A') {
-                for (int j = i; j < name.length(); j++) {
-                    while (name.charAt(j) == 'A') {
-                        a++;
-                    }
-                }
-
-
+            if (name.charAt(i) > 'N') {
+                answer += 'Z' - name.charAt(i) + 1;
             } else {
-                if (name.charAt(i) > 'N') {
-                    forward += 'Z' - name.charAt(i) + 1;
-                    System.out.println('Z' - name.charAt(i) + 1);
-                }  else{
-                    forward += name.charAt(i) - 'A';
-                    System.out.println(name.charAt(i) - 'A');
-                }
-
+                answer += name.charAt(i) - 'A';
             }
 
-            System.out.println("a : " + a);
-        }
-        forward += name.length() - 1;
+            int numA = i + 1;
+            while (numA < length && name.charAt(numA) == 'A') {
+                numA++;
+            }
+            move = Math.min(move, i + length - numA + i);
 
+        }
+        answer += move;
 
 
         return answer;
