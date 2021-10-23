@@ -9,10 +9,10 @@ public class FindPrimeNum_carnival77 {
     static ArrayList<Integer> arr = new ArrayList<>();
     static String num;
 
-    public void dfs(String str, int m){
-        if(str.length() == m) {
-            if (!arr.contains(Integer.parseInt(str)))
-                arr.add(Integer.parseInt(str));
+    public void dfs(String[] str, int m,int idx){
+        if(idx == m) {
+            if (!arr.contains(Integer.parseInt(String.join("",str))))
+                arr.add(Integer.parseInt(String.join("",str)));
             return;
         }
 
@@ -20,10 +20,9 @@ public class FindPrimeNum_carnival77 {
             if(used[i])
                 continue;
             used[i]=true;
-            str+=num.charAt(i);
-            dfs(str,m);
+            str[idx] = Character.toString(num.charAt(i));
+            dfs(str,m,idx+1);
             used[i]=false;
-            str=str.substring(0,str.length()-1);
         }
     }
 
@@ -42,7 +41,8 @@ public class FindPrimeNum_carnival77 {
         num = numbers;
         // 1. 주어진 numbers의 순열의 모든 경우의 수를 조합
         for(int i=1;i<numbers.length()+1;i++){
-            dfs("",i);
+            String[] str=new String[i];
+            dfs(str,i,0);
         }
         // 2. 해당 숫자들 중 소수 판별
         for(int x:arr){
