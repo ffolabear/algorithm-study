@@ -20,6 +20,7 @@ public class Joystick_ffbear {
             while (numA < length && name.charAt(numA) == 'A') {
                 numA++;
             }
+
             move = Math.min(move, i + length - numA + i);
 
         }
