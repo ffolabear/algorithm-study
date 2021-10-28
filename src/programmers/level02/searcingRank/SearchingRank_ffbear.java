@@ -12,19 +12,27 @@ public class SearchingRank_ffbear {
         int[] answer = new int[query.length];
         data = new HashMap<>();
 
+        //가능한 조합수를 저장
         for (String s : info) {
             String[] raw = s.split(" ");
             dfs("", 0, raw);
         }
 
-        int index = 0;
+        //이진 탐색부분
+        List<String> list = new ArrayList<>(data.keySet());
+        for(int i=0; i<list.size(); i++) {
+            List<Integer> scoreList = data.get(list.get(i));
+            Collections.sort(scoreList);
+        }
 
-        for (String s : query) {
 
-            String queryRow = s.replaceAll(" and ", "");
+        for (int i=0; i < query.length; i++) {
+
+            String queryRow = query[i].replaceAll(" and ", "");
             String[] queryData = queryRow.split(" ");
-            Collections.sort(data.get(queryData[0]));
-            answer[index++] = bns(queryData[0], Integer.parseInt(queryData[1]));
+
+            int score = Integer.parseInt(queryData[1]);
+            answer[i] = bns(queryData[0], score);
 
         }
 
@@ -35,6 +43,7 @@ public class SearchingRank_ffbear {
 
         if (depth == 4) {
             int score = Integer.parseInt(raw[4]);
+
             if (data.containsKey(str)) {
                 data.get(str).add(score);
             } else {
@@ -56,6 +65,7 @@ public class SearchingRank_ffbear {
         if (!data.containsKey(query)) {
             return 0;
         }
+
         ArrayList<Integer> scores = data.get(query);
         int start = 0, end = scores.size() - 1;
 
