@@ -3,7 +3,7 @@ package programmers.level01.failureRate;
 import java.util.*;
 import java.util.Map.Entry;
 
-public class FailureRate {
+public class FailureRate_carnival77 {
 
     // 나의 풀이 : HashMap, ArrayList, map sort 사용
     public int[] solution(int N, int[] stages) {
@@ -101,7 +101,7 @@ public class FailureRate {
         int N = 5;
         int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
 
-        FailureRate sol = new FailureRate();
+        FailureRate_carnival77 sol = new FailureRate_carnival77();
         sol.solution2(N,stages);
 
     }
