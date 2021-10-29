@@ -1,6 +1,6 @@
 package programmers.level02.printer;
 import programmers.level02.phoneNumList.PhoneNumList_carnival77;
-
+// 우선순위 큐 사용해볼 것
 import java.awt.*;
 import java.util.*;
 public class Printer_carnival77 {
@@ -46,12 +46,35 @@ public class Printer_carnival77 {
         return answer;
     }
 
+    public int solution2(int[] priorities, int location) {
+        int answer = 1;
+
+        PriorityQueue<Integer> q = new PriorityQueue<>(Collections.reverseOrder());
+
+        for(int p : priorities){
+            q.add(p);
+        }
+
+        while(!q.isEmpty()){
+            for(int i=0;i<priorities.length;i++){
+                if(priorities[i] == q.peek()){
+                    if(location == i){
+                        return answer;
+                    }
+                    answer+=1;
+                    q.poll();
+                }
+            }
+        }
+        return answer;
+    }
+
     public static void main(String[] args) {
 
         int[] priorities = {2, 1, 3, 2};
         int location = 2;
 
         Printer_carnival77 sol = new Printer_carnival77();
-        System.out.println(sol.solution(priorities,location));
+        System.out.println(sol.solution2(priorities,location));
     }
 }
