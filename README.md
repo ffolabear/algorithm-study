@@ -7,7 +7,7 @@
   - [김태현](https://github.com/ffolabear)
   - [김효서](https://github.com/gytj2013)
   - [신동민](https://github.com/carnival77)
-  - ~~임한응~~
+
     <!--   https://github.com/chelllagom   -->
 
 
@@ -42,8 +42,14 @@
 
    ### 일요일
    
-   <img src="https://user-images.githubusercontent.com/65614734/138659106-69fba4fa-0849-4eaf-a3d8-7083d85563fe.png"  width="600" height="600">
+   
 
+   <p align="center">
+    <img src="https://user-images.githubusercontent.com/65614734/140026141-7039dfd7-c3df-4d00-af0b-dc544bec20d2.png" width="30%">
+   </p>
+   </br>
+   
+   * 스터디는 google meet 또는 gather 를 통해서 진행
    * 코드리뷰 
      - 1주일간 풀었던 문제 5-6개를 한사람씩 정해서 발표
      - 온라인스터디나 오프라인 스터디나 상관없이 todo-list 는 같음     
@@ -137,9 +143,14 @@
   - 위장
 
  ##### ✳️&nbsp;&nbsp;6주차
- - 괄호 변환하기
  - 다리를 지나는 트럭
  - H-Index
+ - 카펫
+ - 큰 수 만들기 
+ - 피로도
+ - 프렌즈4블록
+
+
   
 </br></br>
 
