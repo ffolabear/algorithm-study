@@ -7,7 +7,7 @@
   - [김태현](https://github.com/ffolabear)
   - [김효서](https://github.com/gytj2013)
   - [신동민](https://github.com/carnival77)
-  - ~~임한응~~
+
     <!--   https://github.com/chelllagom   -->
 
 
