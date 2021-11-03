@@ -41,8 +41,8 @@
    </br> 
 
    ### 일요일
-   
-   <img src="https://user-images.githubusercontent.com/65614734/138659106-69fba4fa-0849-4eaf-a3d8-7083d85563fe.png"  width="600" height="600">
+
+   <img src="https://user-images.githubusercontent.com/65614734/140024898-16ae4714-e8fc-40d4-8afc-bdf009ed345d.png"  width="600" height="600">
 
    * 코드리뷰 
      - 1주일간 풀었던 문제 5-6개를 한사람씩 정해서 발표
