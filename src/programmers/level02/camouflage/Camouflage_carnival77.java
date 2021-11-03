@@ -1,4 +1,4 @@
-package programmers.level02.camouflage;
+package camouflage;
 import java.util.*;
 public class Camouflage_carnival77 {
 
