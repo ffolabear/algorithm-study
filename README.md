@@ -42,8 +42,10 @@
 
    ### 일요일
 
-   <img src="https://user-images.githubusercontent.com/65614734/140024898-16ae4714-e8fc-40d4-8afc-bdf009ed345d.png"  width="600" height="600">
-
+   <p align="center">
+    <img src="https://user-images.githubusercontent.com/65614734/140024898-16ae4714-e8fc-40d4-8afc-bdf009ed345d.png" width="50%">
+   </p>
+   
    * 코드리뷰 
      - 1주일간 풀었던 문제 5-6개를 한사람씩 정해서 발표
      - 온라인스터디나 오프라인 스터디나 상관없이 todo-list 는 같음     
