@@ -41,11 +41,15 @@
    </br> 
 
    ### 일요일
+   
+   
 
    <p align="center">
-    <img src="https://user-images.githubusercontent.com/65614734/140024898-16ae4714-e8fc-40d4-8afc-bdf009ed345d.png" width="50%">
+    <img src="https://user-images.githubusercontent.com/65614734/140026141-7039dfd7-c3df-4d00-af0b-dc544bec20d2.png" width="30%">
    </p>
+   </br>
    
+   * 스터디는 google meet 또는 gather 를 통해서 진행
    * 코드리뷰 
      - 1주일간 풀었던 문제 5-6개를 한사람씩 정해서 발표
      - 온라인스터디나 오프라인 스터디나 상관없이 todo-list 는 같음     
