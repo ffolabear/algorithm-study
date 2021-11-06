@@ -2,6 +2,20 @@ package programmers.level02.truckCrossingBridge;
 
 import java.util.*;
 
+class Truck {
+    int weight;
+    int move;
+
+    public Truck(int weight) {
+        this.weight = weight;
+        this.move = 1;
+    }
+
+    public void moving() {
+        move++;
+    }
+}
+
 public class TruckCrossingBridge_carnival77 {
     public int solution(int bridge_length, int weight, int[] truck_weights) {
         int answer = 0; // 다리에 트럭을 추가할 때 증가
@@ -51,20 +65,6 @@ public class TruckCrossingBridge_carnival77 {
     }
 
     // solution 2: truck class , waitQ, moveQ 활용.
-
-    class Truck {
-        int weight;
-        int move;
-
-        public Truck(int weight) {
-            this.weight = weight;
-            this.move = 1;
-        }
-
-        public void moving() {
-            move++;
-        }
-    }
 
     public int solution2(int bridgeLength, int weight, int[] truckWeights) {
         Queue<Truck> waitQ = new LinkedList<>();
