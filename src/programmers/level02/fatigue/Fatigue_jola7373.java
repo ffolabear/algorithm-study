@@ -1,9 +1,10 @@
 package programmers.level02.fatigue;
 
 public class Fatigue_jola7373 {
+    static boolean [] isVisit;
+    static int max = 0;
     class Solution {
-        static boolean [] isVisit;
-        static int max = 0;
+
         public static int solution(int k, int[][] dungeons) {
             isVisit = new boolean[dungeons.length];
             dungeonCount(dungeons, k, 1);
