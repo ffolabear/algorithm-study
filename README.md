@@ -51,7 +51,7 @@
    
    
    <p align="center">
-       <img src="https://user-images.githubusercontent.com/65614734/140761060-42165a0c-7ce8-45eb-ad39-8e8d2d752fb2.gif" width="30%">
+       <img src="https://user-images.githubusercontent.com/65614734/140766603-b3311008-276e-4c68-8d8f-31cb36b3dbc1.gif" width="30%">
    </p>
 
    </br>
