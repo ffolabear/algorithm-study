@@ -1,5 +1,11 @@
 # 🎊 캐치 코딩테스트 스터디
 
+   </br>
+   <p align="center">
+    <img src="https://user-images.githubusercontent.com/65614734/140026141-7039dfd7-c3df-4d00-af0b-dc544bec20d2.png" width="30%">
+   </p>
+
+
 </br>
 
 ### 👋 구성원
@@ -44,10 +50,7 @@
    
    
 
-   <p align="center">
-    <img src="https://user-images.githubusercontent.com/65614734/140026141-7039dfd7-c3df-4d00-af0b-dc544bec20d2.png" width="30%">
-   </p>
-   </br>
+  
    
    * 스터디는 google meet 또는 gather 를 통해서 진행
    * 코드리뷰 
