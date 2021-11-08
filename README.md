@@ -49,8 +49,12 @@
    ### 일요일
    
    
+   
+   <p align="center">
+       <img src="https://user-images.githubusercontent.com/65614734/140761060-42165a0c-7ce8-45eb-ad39-8e8d2d752fb2.gif" width="30%">
+   </p>
 
-  
+   </br>
    
    * 스터디는 google meet 또는 gather 를 통해서 진행
    * 코드리뷰 
