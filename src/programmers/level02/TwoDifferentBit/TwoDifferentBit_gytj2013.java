@@ -1,4 +1,4 @@
-package programmers.level02.TwoDifferentBit;
+package programmers.level02.twoDifferentBit;
 
 class TwoDifferentBit_gytj2013{
     public static long[] solution(long[] numbers) {
