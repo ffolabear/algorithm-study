@@ -9,7 +9,6 @@ public class TwoDifferentBit_ffbear {
         for (int i = 0; i < numbers.length; i++) {
 
 
-
             if (numbers[i] % 2 == 0) {
 
                 answer[i] = numbers[i] + 1;
@@ -25,7 +24,6 @@ public class TwoDifferentBit_ffbear {
                     sb.append("10");
                     sb.append(str.substring(1));
 
-
                 } else {
 
                     //마지막 0을 1로 바꿔주기
@@ -40,20 +38,14 @@ public class TwoDifferentBit_ffbear {
 
                     //나머지 인덱스 ~ 끝까지 붙여주기
                     sb.append(str.substring(firstOne + 1));
-
-
                 }
 
                 System.out.println(sb);
                 answer[i] = Long.parseLong(sb.toString(), 2);
 
-
             }
 
         }
-
-
-
 
         return answer;
     }
@@ -65,4 +57,5 @@ public class TwoDifferentBit_ffbear {
         sol.solution(numbers);
 
     }
+
 }
