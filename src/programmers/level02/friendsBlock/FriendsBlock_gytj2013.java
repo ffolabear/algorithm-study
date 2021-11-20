@@ -1,6 +1,6 @@
 package programmers.level02.friendsBlock;
 
-class FriendsBlock_gytj2013.java {
+class FriendsBlock_gytj2013 {
     public static int solution(int m, int n, String[] board) {
     	int answer =0;
     	char[][] block = new char[m][n];
