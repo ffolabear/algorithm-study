@@ -1,4 +1,6 @@
-class Solution {
+package programmers.level02.skillTree;
+
+class SkillTree_gytj2013 {
     public static int solution(String skill, String[] skill_trees) {
         int answer = 0;
         
@@ -24,8 +26,4 @@ class Solution {
     	}
     	return true;
 	}
-	public static void main(String[] args) {
-    	String[] skill_trees = {"BACDE", "CBADF", "AECB", "BDA"};
-    	System.out.println(solution("CBD", skill_trees));
-    }
 }
