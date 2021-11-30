@@ -32,7 +32,12 @@ public class LastSong_ffbear {
                 sb.append(melody.charAt(j % melody.length()));
             }
 
+            System.out.println(sb);
+            System.out.println(sb.toString().contains(m));
+
             if (sb.toString().contains(m)) {
+
+
                 if (maxTime < sb.length()) {
                     maxTime = sb.length();
                     answer = title;
@@ -56,11 +61,17 @@ public class LastSong_ffbear {
         return melody;
     }
 
+
     public static void main(String[] args) {
 
-        String m = "ABCDEFG";
-        String[] musininfo = {"12:00,12:14,HELLO,CDEFGAB",
-                "13:00,13:05,WORLD,ABCDEF"};
+//        String m = "ABCDEFG";
+//        String[] musininfo = {
+//                "12:00,12:14,HELLO,CDEFGAB",
+//                "13:00,13:05,WORLD,ABCDEF"};
+
+        String m = "ABC";
+        String[] musininfo = {
+                "12:00,12:02,HELLO,ABCDEF"};
 
 //        String m = "CC#BCC#BCC#BCC#B";
 //        String[] musininfo = {"03:00,03:30,FOO,CC#B",

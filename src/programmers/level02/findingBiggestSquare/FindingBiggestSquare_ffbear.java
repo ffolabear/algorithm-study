@@ -15,6 +15,7 @@ public class FindingBiggestSquare_ffbear {
         }
 
 
+
         for (int i = 1; i < newBoard.length; i++) {
             for (int j = 1; j < newBoard[i].length; j++) {
                 if (newBoard[i][j] == 1) {
