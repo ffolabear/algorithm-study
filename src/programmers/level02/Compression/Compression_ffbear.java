@@ -9,6 +9,7 @@ public class Compression_ffbear {
 
         ArrayList<Integer> answer = new ArrayList<>();
         HashMap<String, Integer> dict = new HashMap<>();
+
         int idx = 1;
 
         for (int i = 65; i <= 90; i++) {
