@@ -108,9 +108,14 @@
 
 ## 🗓 진행상황
   
-  #### Programmers lv02
+  ### Programmers lv02
+  **모든 문제 풀이완료**
+  
+  <details>
+   <summary>푼 문제 리스트</summary>
+   <div markdown="1">
 
-  ##### ✳️&nbsp;&nbsp;1주차
+   ##### ✳️&nbsp;&nbsp;1주차
   - 문자열 압축
   - 오픈채팅방
   - 카카오프렌즈 컬러링 북
@@ -198,9 +203,14 @@
   - 행렬의 곱셉
   - JadenCase 문자열 만들기
 
-<hr>
+   </div>
+   </details>
 
-#### Programmers lv03
+  
+
+
+
+### Programmers lv03
 
 ##### ✳️&nbsp;&nbsp;12주차
   - [1차] 추석 트래픽
