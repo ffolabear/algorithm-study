@@ -14,7 +14,7 @@ public class starAtIntersection_carnival77 {
         List<long[]> list = new ArrayList<>();
         int n = line.length;
 
-        long  max_X = Long.MIN_VALUE, max_Y = Long.MIN_VALUE, min_X = Long.MAX_VALUE, min_Y =Long.MAX_VALUE;
+        long max_X = Long.MIN_VALUE, max_Y = Long.MIN_VALUE, min_X = Long.MAX_VALUE, min_Y =Long.MAX_VALUE;
 
         for(int i=0;i<n-1;i++){
             for(int j=i+1;j<n;j++){
