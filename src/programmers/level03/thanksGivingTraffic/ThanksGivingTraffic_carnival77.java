@@ -1,11 +1,11 @@
 // level3 [1차]추석 트래픽
 
-package programmers.level03;
+package programmers.level03.thanksGivingTraffic;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class thanksGivingTraffic_carnival77 {
+public class ThanksGivingTraffic_carnival77 {
     public static int solution(String[] lines) throws Exception {
         SimpleDateFormat format = new SimpleDateFormat("HH:mm:ss.SSS");
 

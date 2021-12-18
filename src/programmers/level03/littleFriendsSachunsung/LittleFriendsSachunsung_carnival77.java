@@ -100,3 +100,5 @@ public class LittleFriendsSachunsung_carnival77 {
         return true;
     }
 }
+
+// 참고 : https://dev-note-97.tistory.com/255
