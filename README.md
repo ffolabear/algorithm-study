@@ -229,6 +229,7 @@
 </br>
 
 ### Programmers lv03
+**보류(백준 문제리스트 푼 다음 결정)**
 
 <details>
    <summary>푼 문제 리스트</summary>
