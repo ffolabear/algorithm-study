@@ -1,4 +1,4 @@
-package Baekjoon.Codeplus.Bruteforce;
+package Baekjoon.practice.bruteForce.lotto_6603;
 
 import java.io.BufferedReader;
 import java.io.IOException;
