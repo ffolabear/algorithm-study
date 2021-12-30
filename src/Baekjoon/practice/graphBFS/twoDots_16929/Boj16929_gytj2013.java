@@ -1,4 +1,4 @@
-package Baekjoon.practice.graph&BFS.twoDots_16929;
+package Baekjoon.practice.graphBFS.twoDots_16929;
 import java.util.Scanner;
 
 class Boj16929_gytj2013 {
