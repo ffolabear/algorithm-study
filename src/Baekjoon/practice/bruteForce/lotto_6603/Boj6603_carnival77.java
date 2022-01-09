@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Lotto_6603_carnival77 {
+public class Boj6603_carnival77 {
 
 //    public class Main {
 
